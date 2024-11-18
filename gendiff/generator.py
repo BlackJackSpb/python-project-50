@@ -1,13 +1,14 @@
 import json
 
 
-def gener_diff(file1_path, file2_path):
-    data1 = json.load(open(file1_path))
-    data2 = json.load(open(file2_path))
+def generate_diff(file1_path, file2_path):
+    data1 = json.load(open(file1_path), parse_int=str)
+    data2 = json.load(open(file2_path), parse_int=str)
     diff = []
     
     def to_str(smth):
         return str(smth).lower()
+
     for key in sorted(data1.keys() | data2.keys()):
         if key not in data2:
             diff.append(f'- {key}: {to_str(data1[key])}')
