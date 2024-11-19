@@ -3,6 +3,7 @@
 import argparse
 from gendiff.generator import generate_diff
 
+
 def main():
     """Parsing arguments."""
     parser = argparse.ArgumentParser(description='Compares two configuration \

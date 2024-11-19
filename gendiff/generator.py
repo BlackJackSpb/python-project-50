@@ -5,7 +5,7 @@ def generate_diff(file1_path, file2_path):
     data1 = json.load(open(file1_path), parse_int=str)
     data2 = json.load(open(file2_path), parse_int=str)
     diff = []
-    
+
     def to_str(smth):
         return str(smth).lower()
 
