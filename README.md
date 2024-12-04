@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/BlackJackSpb/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/BlackJackSpb/python-project-50/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e201a3681343b590ddeb/maintainability)](https://codeclimate.com/github/BlackJackSpb/python-project-50/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/test_coverage)](https://codeclimate.com/github/hexlet-boilerplates/python-package/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e201a3681343b590ddeb/test_coverage)](https://codeclimate.com/github/BlackJackSpb/python-project-50/test_coverage)
 # Difference Calculator
 Difference Calculator is a program that determines the difference between two data structures. 
 
