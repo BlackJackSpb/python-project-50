@@ -13,3 +13,5 @@ Utility Features:
 ## Examples:
 ### Comparison of flat files (json):
 [![asciicast](https://asciinema.org/a/692588.svg)](https://asciinema.org/a/692588)
+### Comparison of flat files (yml):
+[![asciicast](https://asciinema.org/a/YlKMy2GYHeRgKSxhXDlGPKHa1.svg)](https://asciinema.org/a/YlKMy2GYHeRgKSxhXDlGPKHa1)
