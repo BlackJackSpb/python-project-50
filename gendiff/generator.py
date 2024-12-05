@@ -1,9 +1,8 @@
-import json
+from .parser import parsers
 
 
 def generate_diff(first_file, second_file):
-    data1 = json.load(open(first_file), parse_int=str)
-    data2 = json.load(open(second_file), parse_int=str)
+    data1, data2 = parsers(first_file, second_file)
     diff = []
 
     def to_str(item):
@@ -19,5 +18,6 @@ def generate_diff(first_file, second_file):
             diff.append(f'  + {key}: {to_str(data2[key])}')
         else:
             diff.append(f'  {key}: {to_str(data1[key])}')
+
     to_str_diff = '\n'.join(diff)
     return f"{{\n{to_str_diff}\n}}"
