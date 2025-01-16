@@ -4,9 +4,8 @@ from gendiff import generate_diff, cli_pars
 
 
 def main():
-    first_file, second_file = cli_pars()
-    diff = generate_diff(first_file, second_file)
-    print(diff)
+    first_file, second_file, format = cli_pars()
+    print(generate_diff(first_file, second_file, format))
 
 
 if __name__ == '__main__':
