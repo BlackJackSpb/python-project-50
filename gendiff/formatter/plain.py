@@ -23,6 +23,7 @@ def make_plain(data, path=''):
     format = "\n".join(result)
     return f"{format}"
 
+
 def to_str(value):
     if value is None:
         return 'null'
@@ -31,5 +32,5 @@ def to_str(value):
     if isinstance(value, int):
         return value
     if isinstance(value, (dict, list)):
-        return f'[complex value]'
+        return '[complex value]'
     return f"'{value}'"

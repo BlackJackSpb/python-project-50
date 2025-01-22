@@ -17,3 +17,6 @@ def test_file2_vs_file2():
 
 def test_plain():
     assert generate_diff(file1, file2, 'plain') == open('tests/fixtures/result_plain.txt').read().strip()
+
+def test_json():
+    assert generate_diff(file1, file2, 'json') == open('tests/fixtures/result_json.txt').read().strip()
