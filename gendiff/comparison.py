@@ -6,19 +6,22 @@ def compare_data(data1, data2):
         'children': adding_comparisons(data1, data2)
     }
 
+
 def add(key, value):
     return {
-    'name': key,
-    'value': value,
-    'type': 'add'
+        'name': key,
+        'value': value,
+        'type': 'add'
     }
 
-def remove(key,value):
+
+def remove(key, value):
     return {
         'name': key,
         'value': value,
         'type': 'remove'
     }
+
 
 def inside(key, value1, value2):
     return {
@@ -26,6 +29,7 @@ def inside(key, value1, value2):
         'type': 'inside',
         'children': adding_comparisons(value1, value2)
     }
+
 
 def modified(key, value1, value2):
     return {
@@ -35,12 +39,15 @@ def modified(key, value1, value2):
         'type': 'mod'
     }
 
+
 def no_changes(key, value):
     return {
         'name': key,
         'value': value,
         'type': 'no_changes'
     }
+
+
 def adding_comparisons(file1, file2):
     diff_add = file2.keys() - file1.keys()
     diff_remove = file1.keys() - file2.keys()
@@ -59,10 +66,10 @@ def adding_comparisons(file1, file2):
         elif isinstance(value1, dict) and isinstance(value2, dict):
             diff.append(inside(key_, value1, value2))
         elif value1 != value2:
-            diff.append(modified(key_,value1,value2))
+            diff.append(modified(key_, value1, value2))
         else:
             diff.append(no_changes(key_, value1))
-    
+
     sorted_diff = sorted(diff, key=lambda x: x['name'])
 
     return sorted_diff
