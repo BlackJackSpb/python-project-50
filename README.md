@@ -17,3 +17,5 @@ Utility Features:
 [![asciicast](https://asciinema.org/a/YlKMy2GYHeRgKSxhXDlGPKHa1.svg)](https://asciinema.org/a/YlKMy2GYHeRgKSxhXDlGPKHa1)
 ### Stylish formatter(default) for nested trees:
 [![asciicast](https://asciinema.org/a/8pl8TB2J8FhuEVfa4eV50eLPP.svg)](https://asciinema.org/a/8pl8TB2J8FhuEVfa4eV50eLPP)
+### Plain formatter(default):
+[![asciicast](https://asciinema.org/a/KheOYYY0Mq5A3K3zDegub3qi5.svg)](https://asciinema.org/a/KheOYYY0Mq5A3K3zDegub3qi5)
