@@ -19,3 +19,5 @@ Utility Features:
 [![asciicast](https://asciinema.org/a/8pl8TB2J8FhuEVfa4eV50eLPP.svg)](https://asciinema.org/a/8pl8TB2J8FhuEVfa4eV50eLPP)
 ### Plain formatter(default):
 [![asciicast](https://asciinema.org/a/KheOYYY0Mq5A3K3zDegub3qi5.svg)](https://asciinema.org/a/KheOYYY0Mq5A3K3zDegub3qi5)
+### Json formatter(default):
+[![asciicast](https://asciinema.org/a/XLucbM8XBNnIxKAYQ8k1F5n6x.svg)](https://asciinema.org/a/XLucbM8XBNnIxKAYQ8k1F5n6x)
