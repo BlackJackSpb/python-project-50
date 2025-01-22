@@ -11,7 +11,9 @@ Utility Features:
  - Support for different input formats: yaml, json
  - Generation of the report in the form of plain text, stylish and json
 ## Examples:
-### Comparison of flat files (json):
+### Stylish formatter(json) for plain trees:
 [![asciicast](https://asciinema.org/a/692588.svg)](https://asciinema.org/a/692588)
-### Comparison of flat files (yml):
+### Stylish formatter(yaml/yml) for plain trees:
 [![asciicast](https://asciinema.org/a/YlKMy2GYHeRgKSxhXDlGPKHa1.svg)](https://asciinema.org/a/YlKMy2GYHeRgKSxhXDlGPKHa1)
+### Stylish formatter(default) for nested trees:
+[![asciicast](https://asciinema.org/a/8pl8TB2J8FhuEVfa4eV50eLPP.svg)](https://asciinema.org/a/8pl8TB2J8FhuEVfa4eV50eLPP)
