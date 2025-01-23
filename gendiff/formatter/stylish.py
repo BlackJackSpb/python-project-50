@@ -25,7 +25,7 @@ def make_stylish(data, depth=0):
             tree.append(f'{deep_ident}{build_ident()}{key}: {string}')
         if type == 'inside':
             tree.append(
-                f'{deep_ident}{build_ident()}{key}:' +
+                f'{deep_ident}{build_ident()}{key}: ' +
                 f'{make_stylish(_item, depth + 1)}'
             )
         if type == 'mod':
