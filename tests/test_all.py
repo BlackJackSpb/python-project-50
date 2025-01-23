@@ -5,8 +5,8 @@ file2 = 'tests/fixtures/file2.yml'
 file1_txt = 'tests/fixtures/file1.txt'
 file2_txt = 'tests/fixtures/file2.txt'
 file1_2_txt = 'tests/fixtures/result_f1_f2_json.txt'
-plain_txt = 'tests/fixtures/file2.txt'
-json_txt = 'tests/fixtures/file2.txt'
+plain = 'tests/fixtures/file2.txt'
+json = 'tests/fixtures/file2.txt'
 
 
 def test_file1_vs_file2():
@@ -22,8 +22,8 @@ def test_file2_vs_file2():
 
 
 def test_plain():
-    assert generate_diff(file1, file2, 'plain') == open(plain_txt).read().strip()
+    assert generate_diff(file1, file2, 'plain') == open(plain).read().strip()
 
 
 def test_json():
-    assert generate_diff(file1, file2, 'json') == open(json_txt).read().strip()
+    assert generate_diff(file1, file2, 'json') == open(json).read().strip()
