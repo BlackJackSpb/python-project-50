@@ -5,8 +5,8 @@ file2 = 'tests/fixtures/file2.yml'
 file1_txt = 'tests/fixtures/file1.txt'
 file2_txt = 'tests/fixtures/file2.txt'
 file1_2_txt = 'tests/fixtures/result_f1_f2_json.txt'
-plain = 'tests/fixtures/file2.txt'
-json = 'tests/fixtures/file2.txt'
+plain = 'tests/fixtures/result_plain.txt'
+json = 'tests/fixtures/result_json.txt'
 
 
 def test_file1_vs_file2():
