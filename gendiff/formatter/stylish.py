@@ -28,7 +28,7 @@ def make_stylish(data, depth=0):
                 f'{deep_ident}{build_ident()}{key}: ' +
                 f'{make_stylish(_item, depth + 1)}'
             )
-        if type == 'mod':
+        if type == 'modified':
             tree.append(f"{deep_ident}{build_ident('-')}{key}: {old}")
             tree.append(f"{deep_ident}{build_ident('+')}{key}: {new}")
     format = '\n'.join(tree)
@@ -37,7 +37,6 @@ def make_stylish(data, depth=0):
 
 def to_str(value, depth):
     deep_ident = make_ident(depth)
-    rows = []
     if value is None:
         return 'null'
     if isinstance(value, bool):
@@ -45,6 +44,7 @@ def to_str(value, depth):
     if isinstance(value, int):
         return value
     if isinstance(value, dict):
+        rows = []
         for _key, _row in value.items():
             rows.append(
                 f'{deep_ident}{build_ident()}{_key}: {to_str(_row, depth + 1)}'

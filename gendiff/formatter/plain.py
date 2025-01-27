@@ -16,7 +16,7 @@ def make_plain(data, path=''):
             result.append(f"Property '{current_path}' was removed")
         if type == 'inside':
             result.append(f"{make_plain(item, current_path)}")
-        if type == 'mod':
+        if type == 'modified':
             result.append(
                 f"Property '{current_path}' was updated. From {old} to {new}"
             )

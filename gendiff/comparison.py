@@ -36,7 +36,7 @@ def modified(key, value1, value2):
         'name': key,
         'old_value': value1,
         'new_value': value2,
-        'type': 'mod'
+        'type': 'modified'
     }
 
 

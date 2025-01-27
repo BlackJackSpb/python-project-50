@@ -2,10 +2,18 @@ import json
 import yaml
 
 
+def parser_json(file):
+    with open(file) as f:
+        return json.load(f)
+
+
+def parser_yaml(file):
+    with open(file) as f:
+        return yaml.safe_load(f)
+
+
 def parsers(path):
     if path.endswith('.json'):
-        with open(path) as f:
-            return json.load(f)
+        return parser_json(path)
     elif (path.endswith('.yml') or path.endswith('.yaml')):
-        with open(path) as f:
-            return yaml.safe_load(f)
+        return parser_yaml(path)

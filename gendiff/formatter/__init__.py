@@ -3,9 +3,12 @@ from .plain import make_plain
 from .json import make_json
 
 
-def formated(data, format='stylich'):
-    if format == 'plain':
+def formated(data, format):
+    if format == 'stylish':
+        return make_stylish(data)
+    elif format == 'plain':
         return make_plain(data)
-    if format == 'json':
+    elif format == 'json':
         return make_json(data)
-    return make_stylish(data)
+    else:
+        raise ValueError((f'format {format} not supported'))
