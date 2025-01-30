@@ -2,18 +2,17 @@ import json
 import yaml
 
 
-def parser_json(file):
-    with open(file) as f:
-        return json.load(f)
-
-
-def parser_yaml(file):
-    with open(file) as f:
-        return yaml.safe_load(f)
-
-
-def parsers(path):
+def get_data(path):
     if path.endswith('.json'):
-        return parser_json(path)
+        return parse(path, 'json')
     elif (path.endswith('.yml') or path.endswith('.yaml')):
-        return parser_yaml(path)
+        return parse(path, 'yml')
+
+
+def parse(content, format):
+    if format == 'json':
+        with open(content) as f:
+            return json.load(f)
+    elif format == 'yml':
+        with open(content) as f:
+            return yaml.safe_load(f)
