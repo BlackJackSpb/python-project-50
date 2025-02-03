@@ -7,7 +7,8 @@ def get_full_path(file):
 
 
 def get_result(file):
-    return open(file).read().strip()
+    with open(file) as f:
+        return f.read().strip()
 
 
 @pytest.mark.parametrize("file1, file2, formate, answer", [
